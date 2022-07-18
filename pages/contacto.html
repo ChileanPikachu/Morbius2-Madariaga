@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short cut icon" href="../multimedia/Logo/rodaje.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Morbi2</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Morbi<span class="logo_2">us</span><span class="logo_3">2</span>
+        </div>
+        <nav class="barra">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="quienes_somos.html">Quiénes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#abajo"><em>Ir abajo</em></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto">
+        <div class="contacto_imagen1"></div>
+        <div class="contacto_formulario">
+            <h2>Contacto</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Envíanos tu reseña!</legend><br>
+                    <input type="radio" name="ingreso" value="anonimo"> Anónimo
+                    <input type="radio" name="ingreso" value="no_anonimo">No anónimo
+                    <br>
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre"><br><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido"><br><br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" required><br><br>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" name="telefono" placeholder="ej:+56912345678"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email"><br><br>
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="no_especifica">No específica</option>
+                    </select><br><br>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha"><br><br>
+                    <label for="reseña">Reseña:</label><br>
+                    <textarea name="reseña" id="" cols="30" rows="10"
+                        placeholder="Ingrese aquí su reseña..."></textarea><br>
+                    <input type="button" value="Enviar">
+                    <input type="submit" value="Enviar a correo">
+                    <input type="reset" value="Borrar">
+                </fieldset>
+            </form>
+        </div>
+        <div class="contacto_imagen2"></div>
+    </section>
+    <footer class="footer">
+        <p>No tenemos los morbiderechos
+            Télefono:+56938822693 Email:nico.kanario@gmail.com</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div>
+            <a href="#" class="subir"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
