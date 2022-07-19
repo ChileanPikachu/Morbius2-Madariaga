@@ -24,6 +24,35 @@ header {
     font-size: 40px;
     line-height: 190px;
     text-align: center;
+    transform: translate(100px);
+    animation-name: cruz;
+    animation-duration: 20s;
+}
+
+@keyframes cruz{
+    0% {
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+        transform: translate(100px, -100px);
+    }
+    40%{
+        opacity: 1;
+        transform: translate(100px, 100px);
+    }
+    60%{
+        opacity: 1;
+        transform: translate(200px);
+    }
+    80%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(100px);
+    }
 }
 
 .logo_2 {
@@ -68,7 +97,7 @@ h2 {
     font-size: 20px;
     padding: 15px;
     text-align: justify;
-    background-color: #02152b;
+    background: linear-gradient(to bottom, #02152b, darkred);
     color: white;
 }
 
@@ -148,9 +177,17 @@ h2 {
     background-color: #02152b;
 }
 
+.multimedia_imagenes_promocionales:hover {
+    transform: scale(1.2, 1.2);
+}
+
 .multimedia_imagenes_escenas {
     padding: 10px;
     background-color: #021d34;
+}
+
+.multimedia_imagenes_escenas:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .multimedia_imagenes_reparto {
@@ -158,9 +195,17 @@ h2 {
     background-color: #02253d;
 }
 
+.multimedia_imagenes_reparto:hover {
+    transform: scale(1.2, 1.2);
+}
+
 .multimedia_video {
     padding: 10px;
     background-color: #012e46;
+}
+
+.multimedia_video:hover {
+    transform: scale(1.2, 1.2);
 }
 
 .noticias_imagen1 {
@@ -261,6 +306,10 @@ h2 {
     color: white;
 }
 
+.quienesSomos_dondenosencontramos iframe {
+    transform: translate(100px);
+}
+
 .contacto_imagen1 {
     background-image: url(./multimedia/Imagen/Morbius.jpeg);
     height: 200px;
@@ -277,7 +326,7 @@ h2 {
 }
 
 .contacto_formulario {
-    background-image: url(./multimedia/Contacto/morbiusright.jpg);
+    background-image: url(./multimedia/Imagen/Morbius\ L.jpg);
     background-position: center;
     background-size: cover;
     padding: 30px;
